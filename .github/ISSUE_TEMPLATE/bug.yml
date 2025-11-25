@@ -1,0 +1,77 @@
+name: "🐞 Bug Report"
+description: "Report a bug with as much detail as you can. Please attach screenshots or logs if available."
+title: "[Bug] "
+labels: ["bug"]
+assignees: []
+body:
+  - type: dropdown
+    id: app
+    attributes:
+      label: "Which app?"
+      description: "Choose the app where the bug appears"
+      options:
+        - "Nextlivin Manage"
+        - "Nextlivin Tenant"
+  - type: dropdown
+    id: feature
+    attributes:
+      label: "Feature / Area"
+      description: "Which feature or area is affected?"
+      options:
+        - "Worktrack"
+        - "Feedback"
+        - "Dashboard"
+        - "User management"
+        - "Notifications"
+        - "Payments"
+        - "Other"
+  - type: input
+    id: version
+    attributes:
+      label: "App version"
+      description: "Example: 1.2.3 or build 20251124"
+      placeholder: "e.g. 1.2.3"
+  - type: dropdown
+    id: platform
+    attributes:
+      label: "Platform"
+      options:
+        - "Android"
+        - "iOS"
+        - "Web"
+        - "Other"
+  - type: input
+    id: device
+    attributes:
+      label: "Device / OS"
+      description: "Device model and OS version (optional)"
+      placeholder: "e.g. Samsung A12 / Android 13"
+  - type: textarea
+    id: steps
+    attributes:
+      label: "Steps to reproduce"
+      description: "Describe step-by-step how to reproduce the bug. Be specific."
+      placeholder: |
+        1. Go to ...
+        2. Tap ...
+        3. Observe ...
+  - type: textarea
+    id: expected
+    attributes:
+      label: "Expected result"
+      description: "What did you expect to happen?"
+  - type: textarea
+    id: actual
+    attributes:
+      label: "Actual result / Error message"
+      description: "What actually happened? Include error messages if any."
+  - type: file
+    id: attachments
+    attributes:
+      label: "Attachments (screenshots, logs)"
+      description: "Attach screenshots, logs, or recordings (optional)"
+  - type: input
+    id: reporter_email
+    attributes:
+      label: "Reporter email (optional)"
+      description: "If you'd like a follow-up, enter email"
