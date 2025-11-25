@@ -50,7 +50,7 @@ body:
     id: steps
     attributes:
       label: "Steps to reproduce"
-      description: "Describe step-by-step how to reproduce the bug. Be specific."
+      description: "Describe step-by-step how to reproduce the bug."
       placeholder: |
         1. Go to ...
         2. Tap ...
@@ -65,11 +65,16 @@ body:
     attributes:
       label: "Actual result / Error message"
       description: "What actually happened? Include error messages if any."
-  - type: file
+  - type: textarea
     id: attachments
     attributes:
-      label: "Attachments (screenshots, logs)"
-      description: "Attach screenshots, logs, or recordings (optional)"
+      label: "Attachments (screenshots / videos)"
+      description: |
+        Upload images/videos after submitting the issue OR paste links here.
+      placeholder: |
+        Example:
+        Screenshot: https://...
+        Video: https://...
   - type: input
     id: reporter_email
     attributes:
